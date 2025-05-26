@@ -7,9 +7,9 @@ secret = random.randint(1, 100)
 attempt = 0 
 
 while True:
-    user_guess = input("Introduzca su número:") 
+    user_guess = int( input("Introduzca su número:") ) 
     attempt += 1
-    if user_gess == secret:  # Nombre de variable incorrecto
+    if user_guess == secret:  # Nombre de variable incorrecto
         print("¡Felicitaciones, adivinaste el número!")
         break
     elif user_guess > secret:  
